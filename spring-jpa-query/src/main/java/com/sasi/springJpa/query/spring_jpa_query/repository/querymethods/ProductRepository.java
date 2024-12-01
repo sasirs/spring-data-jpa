@@ -2,7 +2,7 @@
  * @author sasi
  *
  */
-package com.sasi.springJpa.query.spring_jpa_query.repository;
+package com.sasi.springJpa.query.spring_jpa_query.repository.querymethods;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -136,11 +136,11 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 	// Define Named JPQL query
 	Product findByPrice(@Param("price") BigDecimal price);
 
-	List<Product> findAllOrderByNameDesc();
+	//List<Product> findAllOrderByNameDesc();
 
 	// Define Named native SQL query sasi
 	@Query(nativeQuery = true)
 	Product findByDescription(@Param("description") String description);
 
-	List<Product> findAllOrderByNameASC();
+	//List<Product> findAllOrderByNameASC();
 }

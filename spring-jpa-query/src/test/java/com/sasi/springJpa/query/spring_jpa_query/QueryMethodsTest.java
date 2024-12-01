@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.sasi.springJpa.query.spring_jpa_query.entity.Product;
-import com.sasi.springJpa.query.spring_jpa_query.repository.ProductRepository;
+import com.sasi.springJpa.query.spring_jpa_query.repository.querymethods.ProductRepository;
 
 /**
  * 
